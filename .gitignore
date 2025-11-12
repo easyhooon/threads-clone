@@ -39,3 +39,18 @@ yarn-error.*
 app-example
 google-services.json
 threads-clone-*.json
+
+# IDE
+.vscode/
+
+# Android build artifacts
+android/.gradle/
+android/build/
+android/app/build/
+
+# iOS build artifacts
+ios/build/
+ios/Pods/
+ios/DerivedData/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcuserdata/

@@ -35,7 +35,8 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
@@ -43,8 +44,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "4a80fedc-fe4a-46b5-aa00-e53624cc692e"
+        "projectId": "1dba7ba8-89c3-41ab-86f8-ae052d2fe4f8"
       }
-    }
+    },
+    "owner": "easyhooon"
   }
 }
