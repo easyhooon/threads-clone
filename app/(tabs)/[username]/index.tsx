@@ -1,7 +1,10 @@
 import { Text, View, TouchableOpacity } from "react-native";
-import { router } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 
 export default function Index() {
+  const router = useRouter();
+  const { username } = useLocalSearchParams();
+
   return (
     <View
       style={{
@@ -11,19 +14,17 @@ export default function Index() {
       }}
     >
       <View>
-        <TouchableOpacity onPress={() => router.push("/[username]/threads")}>
+        <TouchableOpacity onPress={() => router.push(`/{username}`)}>
           <Text>Threads</Text>
         </TouchableOpacity>
       </View>
-
       <View>
-        <TouchableOpacity onPress={() => router.push("/[username]/threads")>
+        <TouchableOpacity onPress={() => router.push(`/{username}/replies`)}>
           <Text>Replies</Text>
         </TouchableOpacity>
       </View>
-
       <View>
-        <TouchableOpacity onPress={() => router.push("/[username]/threads")>
+        <TouchableOpacity onPress={() => router.push(`/[username]/reposts`)}>
           <Text>Reposts</Text>
         </TouchableOpacity>
       </View>
